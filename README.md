@@ -3,6 +3,10 @@
 
 ![i3-volume-ctrl screenshot](screenshot.png)
 
+## Requirements
+* alsa-utils
+* zenity
+
 ## Installation
 * Clone down this repository somewhere.
 * Install `zenity`
@@ -12,6 +16,14 @@
 
         # debian / ubuntu
         sudo apt-get install zenity
+
+* Install `alsa-utils`
+
+        # arch-linux
+        sudo pacman -S alsa-utils
+
+        # debian / ubuntu
+        sudo apt-get install alsa-utils
 
 * Keybindings for i3, put this in you i3 config file:
 
