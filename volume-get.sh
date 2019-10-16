@@ -2,6 +2,6 @@
 
 vol=`amixer get Master | grep "\[on\]"`
 vol=( $vol )
-vol=`echo ${vol[4]} | sed -r 's/%//g' | sed -r 's/\[//g' | sed -r 's/\]//g'`
+vol=`echo ${vol[3]} | sed -r 's/%//g' | sed -r 's/\[//g' | sed -r 's/\]//g'`
 
 echo $vol
