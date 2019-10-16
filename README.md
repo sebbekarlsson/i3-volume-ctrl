@@ -1,23 +1,26 @@
 # i3-volume-ctrl
+
 > Simple volume control for i3
 
 ![i3-volume-ctrl screenshot](screenshot.png)
 
 ## Requirements
-* alsa-utils
-* zenity
+
+- alsa-utils
+- yad
 
 ## Installation
-* Clone down this repository somewhere.
-* Install `zenity`
+
+- Clone down this repository somewhere.
+- Install `yad`
 
         # arch-linux
-        sudo pacman -S zenity
+        sudo pacman -S yad
 
         # debian / ubuntu
-        sudo apt-get install zenity
+        sudo apt-get install yad
 
-* Install `alsa-utils`
+- Install `alsa-utils`
 
         # arch-linux
         sudo pacman -S alsa-utils
@@ -25,7 +28,7 @@
         # debian / ubuntu
         sudo apt-get install alsa-utils
 
-* Keybindings for i3, put this in you i3 config file:
+- Keybindings for i3, put this in you i3 config file:
 
         bindsym $mod+F3 exec <path-to-i3-volume-ctrl>/volume-increase.sh
         bindsym $mod+F2 exec <path-to-i3-volume-ctrl>/volume-decrease.sh
