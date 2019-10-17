@@ -4,4 +4,4 @@ pkill -f zenity
 
 vol=$(./volume-get.sh)
 
-zenity --progress --percentage $vol --text "$vol%"
+yad --progress --on-top --splash --close-on-unfocus --percentage $vol --text "$vol%"
